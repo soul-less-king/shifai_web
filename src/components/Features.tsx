@@ -107,8 +107,9 @@ function FeatureCard({
       ref={ref}
       initial={{ opacity: 0, y: 40 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
+      whileHover={{ y: -8, scale: 1.02 }}
       transition={{ duration: 0.5, delay: index * 0.08 }}
-      className="group gradient-border p-6 hover:scale-[1.02] transition-transform duration-300"
+      className="group gradient-border p-6 transition-all duration-300 hover:shadow-[0_0_40px_rgba(6,182,212,0.15)]"
     >
       <div
         className={`w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center mb-4 group-hover:shadow-lg ${feature.glow} transition-shadow duration-300`}

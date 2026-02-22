@@ -114,8 +114,9 @@ export default function Documents() {
                 ref={ref}
                 initial={{ opacity: 0, scale: 0.9 }}
                 animate={inView ? { opacity: 1, scale: 1 } : {}}
+                whileHover={{ y: -5, scale: 1.02 }}
                 transition={{ duration: 0.4, delay: i * 0.06 }}
-                className="glass rounded-2xl p-5 hover:bg-white/[0.04] transition-colors duration-300 group"
+                className="glass rounded-2xl p-5 hover:bg-white/[0.04] transition-colors duration-300 group shadow-[0_0_15px_rgba(0,0,0,0.2)] hover:shadow-[0_0_30px_rgba(6,182,212,0.15)]"
               >
                 <doc.icon
                   size={28}

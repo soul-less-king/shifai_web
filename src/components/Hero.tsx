@@ -35,6 +35,13 @@ function FloatingOrb({
   );
 }
 
+import dynamic from 'next/dynamic';
+
+
+const ParticlesBackground = dynamic(() => import("./ParticlesBackground"), { 
+  ssr: false 
+});
+
 const stats = [
   { value: "97%+", label: "Transcription Accuracy" },
   { value: "70%", label: "Less Documentation Time" },
@@ -45,6 +52,7 @@ const stats = [
 export default function Hero() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+      {/* <ParticlesBackground /> */}
       {/* Background Effects */}
       <div className="absolute inset-0">
         {/* Grid pattern */}

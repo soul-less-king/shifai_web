@@ -5,6 +5,7 @@ import HowItWorks from "@/components/HowItWorks";
 import Region from "@/components/Region";
 import Security from "@/components/Security";
 import Documents from "@/components/Documents";
+import PatientPortal from "@/components/PatientPortal";
 import Pricing from "@/components/Pricing";
 import Footer from "@/components/Footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Region />
         <Security />
         <Documents />
+        <PatientPortal />
         <Pricing />
       </main>
       <Footer />

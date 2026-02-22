@@ -10,6 +10,7 @@ const navLinks = [
   { label: "Native AI", href: "#region" },
   { label: "Security", href: "#security" },
   { label: "Documents", href: "#documents" },
+  { label: "Patient Portal", href: "#patient-portal" },
   { label: "Pricing", href: "#pricing" },
   { label: "Contact", href: "#contact" },
 ];
